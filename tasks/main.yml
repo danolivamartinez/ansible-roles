@@ -1,0 +1,25 @@
+---
+- name: Install RPM Packages
+  yum:
+    name: "{{ item }}"
+    state: latest
+  ignore_errors: yes
+  loop:
+    - httpd
+    - tar
+
+- name: Install pip Packages
+  pip:
+    name: "{{ item }}"
+  ignore_errors: yes
+  loop:
+    - ansible
+    - boto
+    - boto3
+    - awscli
+
+- name: Start service httpd, if not started
+  service:
+    name: httpd
+    state: started
+

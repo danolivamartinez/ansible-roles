@@ -1,0 +1,5 @@
+---
+# defaults file for role
+env: nonprod
+aws_region: eu-west-1
+

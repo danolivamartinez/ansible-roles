@@ -1,0 +1,15 @@
+---
+# vars file for base
+
+# Cuenta para la que se crea la imagen
+account: ""
+
+# Entorno prod o nonprod
+env: ""
+
+# Region para la que se crea la imagen
+aws_region: "eu-west-1"
+
+# Zona DNS
+dns_zone: ""
+
